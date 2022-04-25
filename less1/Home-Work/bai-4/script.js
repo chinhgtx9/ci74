@@ -16,8 +16,8 @@ let arr = [
         phone: '0448736328'
     },
     {
-        name: 'Maddi',
-        phone: '092029301'
+        name: 'Bela',
+        phone: '0448736328'
     },
     {
         name: 'fadil',
@@ -39,6 +39,7 @@ const addPhone = document.getElementById('add-phone');
 const btnAdd = document.getElementById('btn-add');
 const inputSearch = document.getElementById('search');
 const bntSearch = document.getElementById('btn-search');
+const btndelete = document.getElementById('btn-delete');
 
 function render(){
     let newarr = arr.sort(function(a, b) {
@@ -91,4 +92,15 @@ bntSearch.onclick = () => {
             show_full.innerHTML = show_tag;
         }
     }
+}
+btndelete.onclick = () => {
+    for(let i = 0; i < arr.length; i++) {
+        for(let j = i+1; j < arr.length; j++){
+            if(arr[i].name == arr[j].name && arr[i].phone == arr[j].phone){
+                arr.splice(j,1);
+            }
+        }
+
+    }
+    render();
 }
