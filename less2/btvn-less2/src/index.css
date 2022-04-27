@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: 
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  padding: 20px;
+}
+.box{
+  width: 500px;
+}
+input{
+  width: 100%;
+  border: none;
+  font-size:25px;
+  padding: 20px;
+  border-bottom: 1px solid rgb(170, 161, 161);
+}
+.list{
+  font-size: 20px;
+  width: 100%;
+  padding: 20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+.radio{
+  flex:1;
+}
+.name{
+  flex:4
+}
+.footer{
+  display: flex;
+  justify-content:space-between;
+  padding: 20px;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
